@@ -1,9 +1,9 @@
 import Header from "./components/Header"
-import Task from "./components/Task"
-import useState from "react"
+import Tasks from "./components/Tasks"
+import {useState} from "react"
 
 function App() {
-  [tasks, setTask] = useState([
+ const [tasks, setTask] = useState([
       {
           id:1,
           text: "Doctor Appointment",
@@ -27,7 +27,7 @@ function App() {
   return (
     <div className='container'>
       <Header title="Task Tracker" />
-      <Task tasks={tasks} />
+      <Tasks tasks={tasks} />
     </div>
   )
 }

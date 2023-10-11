@@ -1,12 +1,11 @@
 
-const Task = ({tasks}) => {
-    return(
-        <>
-            {tasks.map(task => 
-                (<h3 key={task.id}>{task.text}</h3>)
-            )}
-    
-        </>
+const Task = ({task}) =>
+{
+    return (
+        <div className="task">
+            <h3>{task.text}</h3>
+            <p>{task.day}</p>
+        </div>
     )
 }
 
